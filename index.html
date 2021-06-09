@@ -108,7 +108,7 @@
                 //Play the Samba animation  
                 sambaAnim.start(true, 1.0, sambaAnim.from, sambaAnim.to, false);
                 
-                   BABYLON.SceneLoader.ImportMesh("", "https://github.com/ShrianshGoel/super-duper-octo-fortnight/raw/main/b", "xunmenglong_run.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+                   BABYLON.SceneLoader.ImportMesh("", "https://github.com/ShrianshGoel/super-duper-octo-fortnight/raw/main/", "xunmenglong_run.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
                 var hero1 = newMeshes[0];
         
                 //Scale the model down        
@@ -118,7 +118,7 @@
                 camera1.target = hero1;
         
                 //Get the Samba animation Group
-                const sambaAnim1 = scene.getAnimationGroupByName("Kicking");
+                const sambaAnim1 = scene.getAnimationGroupByName("run");
         
                 //Play the Samba animation  
                 sambaAnim1.start(true, 1.0, sambaAnim1.from, sambaAnim1.to, false);
