@@ -47,7 +47,7 @@
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
         
-        var createScene = function () {
+         var createScene = function () {
         
             // Low Poly Character with Blender Tutorial of Grant Abbitt: https://www.youtube.com/user/mediagabbitt
             // Character animations by Mixamo: https://www.mixamo.com/
@@ -93,26 +93,29 @@
         
         
             // Load hero character and play animation
-            BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "Kicking.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+            BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "Male Sitting Pose.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
                 var hero = newMeshes[0];
         
                 //Scale the model down        
                 hero.scaling.scaleInPlace(0.01);
+
+             hero.position.y = 0.77
         
                 //Lock camera on the character 
                 camera1.target = hero;
         
                 //Get the Samba animation Group
-                const sambaAnim = scene.getAnimationGroupByName("Kicking");
+                const sambaAnim = scene.getAnimationGroupByName("Male Sitting Pose");
         
                 //Play the Samba animation  
                 sambaAnim.start(true, 1.0, sambaAnim.from, sambaAnim.to, false);
                 
-                   BABYLON.SceneLoader.ImportMesh("", "https://github.com/ShrianshGoel/super-duper-octo-fortnight/raw/main/", "xunmenglong_run.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+ });
+                   BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "xunmenglong_run.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
                 var hero1 = newMeshes[0];
         
                 //Scale the model down        
-                hero1.scaling.scaleInPlace(0.01);
+                hero1.scaling.scaleInPlace(0.90);
         
                 //Lock camera on the character 
                 camera1.target = hero1;
