@@ -72,6 +72,8 @@
             var light2 = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, -1.0), scene);
             light2.position = new BABYLON.Vector3(0, 5, 5);
         
+             var music = new BABYLON.Sound("EpicInspiringMusic2018-10-23_-_Journey_To_The_Promise_-_David_Fesliyan", "https://shrianshgoel.github.io/super-duper-octo-fortnight/EpicInspiringMusic2018-10-23_-_Journey_To_The_Promise_-_David_Fesliyan.mp3", scene, null, { loop: true, autoplay: true });
+             
             // Skybox
             var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", { size: 1000.0 }, scene);
             var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
