@@ -47,7 +47,7 @@
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
         
-          var createScene = function () {
+    var createScene = function () {
         
             // Low Poly Character with Blender Tutorial of Grant Abbitt: https://www.youtube.com/user/mediagabbitt
             // Character animations by Mixamo: https://www.mixamo.com/
@@ -61,8 +61,7 @@
             scene.activeCamera = camera1;
             scene.activeCamera.attachControl(canvas, true);
             camera1.lowerRadiusLimit = 2;
-            camera1.upperRadiusLimit = 10;
-            camera1.wheelDeltaPercentage = 0.01;
+           
         
             // Lights
             var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
@@ -113,6 +112,22 @@
                 sambaAnim.start(true, 1.0, sambaAnim.from, sambaAnim.to, false);
                 
  });
+   BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "canglong.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+                var hero9 = newMeshes[0];
+        hero9.position.y = 2.77
+                //Scale the model down        
+                hero9.scaling.scaleInPlace(0.02);
+
+        
+                //Lock camera on the character 
+                  hero9.position.x = -8
+                //Get the Samba animation Group
+                const sambaAnim = scene.getAnimationGroupByName("Male Sitting Pose");
+        
+                //Play the Samba animation  
+                sambaAnim.start(true, 1.0, sambaAnim.from, sambaAnim.to, false);
+                
+ });
               BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "model (2).glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
                 var hero2 = newMeshes[0];
         
@@ -137,6 +152,18 @@
                 //Lock camera on the character 
                 camera1.target = hero;
         
+                
+ });
+       BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "glass.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+                var hero8 = newMeshes[0];
+        
+                //Scale the model down        
+                hero8.scaling.scaleInPlace(13.1);
+
+             hero8.position.x = -7
+        
+                //Lock camera on the character 
+             
                 
  });
                 BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "model (2).glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
