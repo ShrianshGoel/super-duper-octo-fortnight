@@ -158,7 +158,35 @@
                 //Scale the model down        
                 hero5.scaling.scaleInPlace(1.1);
 
-             hero5.position.z = -5
+             hero5.position.z = -9
+        
+                //Lock camera on the character 
+    
+        
+                
+ });
+         BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "cage.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+                var hero6 = newMeshes[0];
+        
+                //Scale the model down        
+                hero6.scaling.scaleInPlace(19.1);
+
+             hero6.position.z = 9
+             hero6.position.x = 5
+        
+                //Lock camera on the character 
+    
+        
+                
+ });
+         BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "sanjiaolong(1).glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+                var hero7 = newMeshes[0];
+        
+                //Scale the model down        
+                hero7.scaling.scaleInPlace(1.1);
+hero7.rotation.z = 12
+             hero7.position.z = 8
+              hero7.position.x = 4
         
                 //Lock camera on the character 
     
@@ -182,8 +210,7 @@
         
             });
         
-            return scene;
-        }
+            return scene;}
                 window.initFunction = async function() {               
                     var asyncEngineCreation = async function() {
                         try {
