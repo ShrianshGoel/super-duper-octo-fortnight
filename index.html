@@ -47,7 +47,7 @@
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
         
-    var createScene = function () {
+     var createScene = function () {
         
             // Low Poly Character with Blender Tutorial of Grant Abbitt: https://www.youtube.com/user/mediagabbitt
             // Character animations by Mixamo: https://www.mixamo.com/
@@ -94,7 +94,7 @@
         
         
             // Load hero character and play animation
-            BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "Male Sitting Pose.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+            BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "Sitting.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
                 var hero = newMeshes[0];
         
                 //Scale the model down        
@@ -221,11 +221,12 @@ hero7.rotation.z = 12
         
                 
  });
-                   BABYLON.SceneLoader.ImportMesh("", "https://shrianshgoel.github.io/super-duper-octo-fortnight/", "xunmenglong_run.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
+ 
+                   BABYLON.SceneLoader.ImportMesh("", "https://github.com/ShrianshGoel/3d-Objects/raw/main/", "Rampaging-T-Rex.glb", scene, function (newMeshes, particleSystems, skeletons, animationGroups) {
                 var hero1 = newMeshes[0];
         
                 //Scale the model down        
-                hero1.scaling.scaleInPlace(0.90);
+                hero1.scaling.scaleInPlace(2.90);
         
                 //Lock camera on the character 
                 camera1.target = hero1;
