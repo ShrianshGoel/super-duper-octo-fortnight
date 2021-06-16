@@ -47,7 +47,7 @@
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
         
-     var createScene = function () {
+         var createScene = function () {
         
             // Low Poly Character with Blender Tutorial of Grant Abbitt: https://www.youtube.com/user/mediagabbitt
             // Character animations by Mixamo: https://www.mixamo.com/
@@ -100,7 +100,7 @@
                 //Scale the model down        
                 hero.scaling.scaleInPlace(0.01);
 
-             hero.position.y = 0.77
+             hero.position.y =3.22
         
                 //Lock camera on the character 
                 camera1.target = hero;
@@ -226,13 +226,13 @@ hero7.rotation.z = 12
                 var hero1 = newMeshes[0];
         
                 //Scale the model down        
-                hero1.scaling.scaleInPlace(2.90);
+            
         
                 //Lock camera on the character 
                 camera1.target = hero1;
         
                 //Get the Samba animation Group
-                const sambaAnim1 = scene.getAnimationGroupByName("run");
+                const sambaAnim1 = scene.getAnimationGroupByName("idle");
         
                 //Play the Samba animation  
                 sambaAnim1.start(true, 1.0, sambaAnim1.from, sambaAnim1.to, false);
