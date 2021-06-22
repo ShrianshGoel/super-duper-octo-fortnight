@@ -9,8 +9,6 @@
         <!-- Babylon.js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
         <script src="https://preview.babylonjs.com/ammo.js"></script>
-       <script src = p5.js></script>
- <script src = p5.play.js></script>
         <script src="https://preview.babylonjs.com/cannon.js"></script>
         <script src="https://preview.babylonjs.com/Oimo.js"></script>
         <script src="https://preview.babylonjs.com/earcut.min.js"></script>
@@ -48,29 +46,6 @@
         var scene = null;
         var sceneToRender = null;
         var createDefaultEngine = function() { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true,  disableWebGL2Support: false}); };
-        let fingers;
-
-function setup() {
-  createCanvas(710, 400);
-  // specify multiple formats for different browsers
-  fingers = createVideo(['assets/fingers.mov', 'assets/fingers.webm']);
-  fingers.hide(); // by default video shows up in separate dom
-  // element. hide it and draw it to the canvas
-  // instead
-}
-
-function draw() {
-  background(150);
-  image(fingers, 10, 10); // draw the video frame to canvas
-  filter(GRAY);
-  image(fingers, 150, 150); // draw a second copy to canvas
-}
-
-function mousePressed() {
-  fingers.loop(); // set the video to loop and start playing
-}
-
-        
         
          var createScene = function () {
         
