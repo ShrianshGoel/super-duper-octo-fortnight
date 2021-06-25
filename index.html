@@ -40,11 +40,10 @@
 <body>
     <canvas id="renderCanvas"></canvas>
     <script>
-   var createScene = function () {
-        
-            // Low Poly Character with Blender Tutorial of Grant Abbitt: https://www.youtube.com/user/mediagabbitt
-            // Character animations by Mixamo: https://www.mixamo.com/
-        
+  var createScene = function () {
+
+    // This creates a basic Babylon Scene object (non-mesh)
+      
             engine.enableOfflineSupport = false;
         
             // Scene and Camera
@@ -245,8 +244,8 @@ crane.rotation = new BABYLON.Vector3(0,20,0);
                 sambaAnim1.start(true, 1.0, sambaAnim1.from, sambaAnim1.to, false);
         
             });
-        
-            return scene;}
+
+return scene;}
                 window.initFunction = async function() {               
                     var asyncEngineCreation = async function() {
                         try {
