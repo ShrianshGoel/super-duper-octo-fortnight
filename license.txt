@@ -1,0 +1,11 @@
+Model Information:
+* title:	Special Agent
+* source:	https://sketchfab.com/3d-models/special-agent-92c4b2fb726d4bf0bca7f6d471fa76cd
+* author:	Shriansh.Goel (https://sketchfab.com/shriansh.goel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Special Agent" (https://sketchfab.com/3d-models/special-agent-92c4b2fb726d4bf0bca7f6d471fa76cd) by Shriansh.Goel (https://sketchfab.com/shriansh.goel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
