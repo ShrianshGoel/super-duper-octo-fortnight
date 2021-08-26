@@ -4832,31 +4832,31 @@
   ],
   "images": [
     {
-      "uri": "textures/Wolf3D_Eyemat_baseColor.jpeg"
+      "uri": "Wolf3D_Eyemat_baseColor.jpeg"
     },
     {
-      "uri": "textures/Wolf3D_Facewearmat_baseColor.png"
+      "uri": "Wolf3D_Facewearmat_baseColor.png"
     },
     {
-      "uri": "textures/Wolf3D_Glassesmat_baseColor.png"
+      "uri": "Wolf3D_Glassesmat_baseColor.png"
     },
     {
-      "uri": "textures/Wolf3D_Hairmat_baseColor.jpeg"
+      "uri": "Wolf3D_Hairmat_baseColor.jpeg"
     },
     {
-      "uri": "textures/Wolf3D_Skinmat_baseColor.jpeg"
+      "uri": "Wolf3D_Skinmat_baseColor.jpeg"
     },
     {
-      "uri": "textures/Wolf3D_Outfit_Bottommat_baseColor.jpeg"
+      "uri": "Wolf3D_Outfit_Bottommat_baseColor.jpeg"
     },
     {
-      "uri": "textures/Wolf3D_Outfit_Footwearmat_baseColor.jpeg"
+      "uri": "Wolf3D_Outfit_Footwearmat_baseColor.jpeg"
     },
     {
-      "uri": "textures/Wolf3D_Outfit_Topmat_baseColor.jpeg"
+      "uri": "Wolf3D_Outfit_Topmat_baseColor.jpeg"
     },
     {
-      "uri": "textures/Wolf3D_Teethmat_baseColor.jpeg"
+      "uri": "Wolf3D_Teethmat_baseColor.jpeg"
     }
   ],
   "materials": [
